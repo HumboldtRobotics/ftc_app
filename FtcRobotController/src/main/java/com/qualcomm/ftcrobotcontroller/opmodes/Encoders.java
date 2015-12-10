@@ -137,6 +137,11 @@ public class Encoders extends  LinearOpMode {
         waitOneFullHardwareCycle();
         return sensorRGB.blue();
     }
+
+    /**
+     * The main movements of the robot during autonomous mode
+     * @throws InterruptedException
+     */
     @Override
     public void runOpMode() throws InterruptedException {
         initiate();
@@ -145,7 +150,7 @@ public class Encoders extends  LinearOpMode {
         waitOneFullHardwareCycle();
         rightmotor.setMode(DcMotorController.RunMode.RUN_TO_POSITION);
         waitOneFullHardwareCycle();
-        // movebackward(10, .5);
+        // movebackward(10, .5); // take out for testing of color sensor
         waitOneFullHardwareCycle();
         // turnright(4, .5);
         waitOneFullHardwareCycle();
