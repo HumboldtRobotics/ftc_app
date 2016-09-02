@@ -8,7 +8,7 @@ import android.hardware.SensorManager;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
-public class Accelorometer implements SensorEventListener {
+public class Accelerometer implements SensorEventListener {
     private SensorManager mSensorManager;
     private Sensor accelerometer;
     public HardwareMap hardwareMap = new HardwareMap();
@@ -26,7 +26,7 @@ public class Accelorometer implements SensorEventListener {
     /*
     * Constructor
     */
-    public Accelorometer() {
+    public Accelerometer() {
 
     }
 

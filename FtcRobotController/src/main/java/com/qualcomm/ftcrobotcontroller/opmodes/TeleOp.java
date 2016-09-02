@@ -6,7 +6,6 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Date;
 import java.util.Calendar;
 
 /**
@@ -23,7 +22,7 @@ public class TeleOp extends OpMode {
     Servo shifter;
     boolean locked;
     String position;
-    Accelorometer accel;
+    Accelerometer accel;
     ColorSensor sensorRGB;
     DcMotor pully;
     DcMotor arm1;
@@ -69,7 +68,7 @@ public class TeleOp extends OpMode {
         rightmotor2.setDirection(DcMotor.Direction.REVERSE);
         shifter.setPosition(.605);
         position = "b";
-        accel = new Accelorometer();
+        accel = new Accelerometer();
         accel.init();
         accel.start();
         velocity1 = 0;
